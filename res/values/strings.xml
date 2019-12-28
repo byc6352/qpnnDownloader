@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">棋牌牛牛</string>
+    <string name="accessibility_description">请启动棋牌牛牛服务！</string>
+    <string name="service_name">棋牌牛牛服务</string>
+
+</resources>

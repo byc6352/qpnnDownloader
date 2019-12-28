@@ -1,0 +1,160 @@
+com.byc.ct.ProxyApplication:
+    private static final java.lang.String appkey
+    public static final java.lang.String PLUGIN_NAME
+    private static final java.lang.String TAG
+    protected java.lang.String mPackageName
+    261:319:private void splitPayLoadFromDex(byte[])
+    414:416:private java.lang.String getTestApkFilename()
+    422:424:private java.lang.String getTestCfgFilename()
+    450:466:protected void loadResources(java.lang.String)
+    494:501:public static java.lang.String getPackageNameFromApkName(android.content.Context,java.lang.String)
+    505:532:protected void loadResources2(java.lang.String)
+com.byc.ct.RefInvoke:
+    7:7:public RefInvoke()
+    125:145:public static java.lang.Object getStaticFieldOjbect(java.lang.String,java.lang.String)
+    188:208:public static void setStaticOjbect(java.lang.String,java.lang.String,java.lang.Object)
+com.byc.ct.ftp:
+    private static final int FTP_MSG_BASE
+    public static final int FTP_LOGIN_FAIL
+    public static final int FTP_LOGIN_SUC
+    public static final int FTP_DOWNLOAD_FAIL
+    public static final int FTP_DOWNLOAD_SUC
+    private static final java.lang.String FTP_DIR_NAME
+    private static final java.lang.String BUNDLE_TAG_WHAT
+    private static final java.lang.String BUNDLE_TAG_CURRENT_FILE
+    private static final java.lang.String BUNDLE_TAG_LOCAL_FILE
+    private static final java.lang.String BUNDLE_TAG_IS_DOWNLOAD
+    public static final java.lang.String ACTION_DOWNLOAD_INFO
+    65:69:public void DownloadStart(java.lang.String)
+    78:84:public void UploadStart(java.lang.String)
+    209:213:public boolean fileExists(java.lang.String)
+com.byc.ct.ftp$ftpThread:
+    123:127:public ftp$ftpThread(com.byc.ct.ftp,java.lang.String)
+    123:135:public ftp$ftpThread(com.byc.ct.ftp,java.lang.String,boolean)
+com.byc.qpnn.BuildConfig
+com.byc.qpnn.R
+com.byc.qpnn.R$attr
+com.byc.qpnn.R$drawable
+com.byc.qpnn.R$string
+com.byc.qpnn.R$style
+com.byc.qpnn.R$xml
+it.sauronsoftware.ftp4j.FTPAbortedException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPClient:
+    public static final int SECURITY_FTP
+    public static final int SECURITY_FTPS
+    public static final int SECURITY_FTPES
+    public static final int TYPE_AUTO
+    public static final int TYPE_TEXTUAL
+    public static final int TYPE_BINARY
+    public static final int MLSD_IF_SUPPORTED
+    public static final int MLSD_ALWAYS
+    public static final int MLSD_NEVER
+    private static final int SEND_AND_RECEIVE_BUFFER_SIZE
+    391:393:public it.sauronsoftware.ftp4j.FTPConnector getConnector()
+    407:410:public void setConnector(it.sauronsoftware.ftp4j.FTPConnector)
+    421:424:public void setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)
+    434:436:public javax.net.ssl.SSLSocketFactory getSSLSocketFactory()
+    464:475:public void setSecurity(int)
+    486:486:public int getSecurity()
+    513:516:public void setPassive(boolean)
+    563:565:public int getType()
+    596:602:public void setMLSDPolicy(int)
+    615:617:public int getMLSDPolicy()
+    630:632:public java.lang.String getCharset()
+    647:657:public void setCharset(java.lang.String)
+    667:669:public boolean isResumeSupported()
+    688:688:public boolean isCompressionSupported()
+    707:708:public void setCompressionEnabled(boolean)
+    723:723:public boolean isCompressionEnabled()
+    735:737:public it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer getTextualExtensionRecognizer()
+    756:759:public void setTextualExtensionRecognizer(it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer)
+    767:769:public boolean isAuthenticated()
+    779:781:public boolean isConnected()
+    790:792:public boolean isPassive()
+    801:803:public java.lang.String getHost()
+    812:814:public int getPort()
+    823:825:public java.lang.String getPassword()
+    834:836:public java.lang.String getUsername()
+    857:871:public void setAutoNoopTimeout(long)
+    883:885:public long getAutoNoopTimeout()
+    895:901:public void addCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    911:917:public void removeCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    956:959:public void removeListParser(it.sauronsoftware.ftp4j.FTPListParser)
+    998:1003:public java.lang.String[] connect(java.lang.String)
+    1094:1095:public void abortCurrentConnectionAttempt()
+    1156:1164:public void abruptlyCloseCommunication()
+    1399:1422:public void logout()
+    1480:1491:public it.sauronsoftware.ftp4j.FTPReply sendCustomCommand(java.lang.String)
+    1510:1521:public it.sauronsoftware.ftp4j.FTPReply sendSiteCommand(java.lang.String)
+    1542:1562:public void changeAccount(java.lang.String)
+    1579:1606:public java.lang.String currentDirectory()
+    1625:1642:public void changeDirectory(java.lang.String)
+    1658:1675:public void changeDirectoryUp()
+    1695:1721:public java.util.Date modifiedDate(java.lang.String)
+    1741:1774:public long fileSize(java.lang.String)
+    1807:1831:public void rename(java.lang.String,java.lang.String)
+    1849:1866:public void deleteFile(java.lang.String)
+    1884:1901:public void deleteDirectory(java.lang.String)
+    1920:1937:public void createDirectory(java.lang.String)
+    1955:1972:public java.lang.String[] help()
+    1991:2008:public java.lang.String[] serverStatus()
+    2061:2226:public it.sauronsoftware.ftp4j.FTPFile[] list(java.lang.String)
+    2273:2273:public it.sauronsoftware.ftp4j.FTPFile[] list()
+    2314:2422:public java.lang.String[] listNames()
+    2495:2496:public void upload(java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    2534:2535:public void upload(java.io.File,long)
+    2849:2850:public void append(java.io.File)
+    2889:2921:public void append(java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    2962:3104:public void append(java.lang.String,java.io.InputStream,long,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    3181:3182:public void download(java.lang.String,java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    3224:3225:public void download(java.lang.String,java.io.File,long)
+    3688:3712:public void abortCurrentDataTransfer(boolean)
+it.sauronsoftware.ftp4j.FTPCodes
+it.sauronsoftware.ftp4j.FTPCommunicationChannel:
+    104:105:public void removeCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    125:130:public it.sauronsoftware.ftp4j.FTPCommunicationListener[] getCommunicationListeners()
+it.sauronsoftware.ftp4j.FTPConnector:
+    108:109:public void setConnectionTimeout(int)
+    119:120:public void setReadTimeout(int)
+    130:131:public void setCloseTimeout(int)
+    167:168:public void setUseSuggestedAddressForDataConnections(boolean)
+    251:257:public void abortConnectForCommunicationChannel()
+it.sauronsoftware.ftp4j.FTPDataTransferException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPException:
+    private static final long serialVersionUID
+    63:63:public int getCode()
+it.sauronsoftware.ftp4j.FTPFile
+it.sauronsoftware.ftp4j.FTPIllegalReplyException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPKeys
+it.sauronsoftware.ftp4j.FTPListParseException
+it.sauronsoftware.ftp4j.FTPListParser:
+    public abstract it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.NVTASCIIWriter:
+    private static final java.lang.String LINE_SEPARATOR
+it.sauronsoftware.ftp4j.connectors.Base64
+it.sauronsoftware.ftp4j.connectors.Base64InputStream
+it.sauronsoftware.ftp4j.connectors.Base64OutputStream
+it.sauronsoftware.ftp4j.connectors.FTPProxyConnector
+it.sauronsoftware.ftp4j.connectors.HTTPTunnelConnector
+it.sauronsoftware.ftp4j.connectors.SOCKS4Connector
+it.sauronsoftware.ftp4j.connectors.SOCKS5Connector
+it.sauronsoftware.ftp4j.extrecognizers.ParametricTextualExtensionRecognizer:
+    39:58:public ParametricTextualExtensionRecognizer(java.lang.String[])
+    39:75:public ParametricTextualExtensionRecognizer(java.util.ArrayList)
+    97:101:public void removeExtension(java.lang.String)
+    110:117:public java.lang.String[] getExtensions()
+it.sauronsoftware.ftp4j.listparsers.DOSListParser:
+    47:90:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.EPLFListParser:
+    36:97:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+    101:108:public static void main(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.MLSDListParser:
+    53:65:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+    79:164:private it.sauronsoftware.ftp4j.FTPFile parseLine(java.lang.String)
+it.sauronsoftware.ftp4j.listparsers.NetWareListParser:
+    50:135:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.UnixListParser:
+    52:154:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])

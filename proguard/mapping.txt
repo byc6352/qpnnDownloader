@@ -1,0 +1,290 @@
+com.byc.ct.ProxyApplication -> com.byc.ct.ProxyApplication:
+    java.lang.String apkFileName -> d
+    java.lang.String cfgFileName -> e
+    java.lang.String odexPath -> f
+    java.lang.String libPath -> g
+    java.lang.String cfgPath -> h
+    boolean mExit -> i
+    android.content.res.AssetManager mAssetManager -> a
+    android.content.res.Resources mResources -> b
+    android.content.res.Resources$Theme mTheme -> c
+    void <init>() -> <init>
+    void attachBaseContext(android.content.Context) -> attachBaseContext
+    void onCreate() -> onCreate
+    void splitCfgFromDex(byte[]) -> a
+    byte[] readDexFileFromApk() -> a
+    byte[] decrypt(byte[]) -> b
+    int CopySdcardFile(java.lang.String,java.lang.String) -> a
+    boolean downloadFile(java.lang.String,java.lang.String) -> b
+    android.content.res.AssetManager getAssets() -> getAssets
+    android.content.res.Resources getResources() -> getResources
+    android.content.res.Resources$Theme getTheme() -> getTheme
+com.byc.ct.RefInvoke -> com.byc.ct.a:
+    java.lang.Object invokeStaticMethod(java.lang.String,java.lang.String,java.lang.Class[],java.lang.Object[]) -> a
+    java.lang.Object invokeMethod(java.lang.String,java.lang.String,java.lang.Object,java.lang.Class[],java.lang.Object[]) -> a
+    java.lang.Object getFieldOjbect(java.lang.String,java.lang.Object,java.lang.String) -> a
+    void setFieldOjbect(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object) -> a
+com.byc.ct.ftp -> com.byc.ct.b:
+    java.lang.String TAG -> e
+    com.byc.ct.ftp current -> f
+    android.content.Context context -> g
+    java.lang.String host -> h
+    int port -> i
+    java.lang.String userName -> j
+    java.lang.String password -> k
+    java.lang.String mFtpDirPath -> a
+    java.lang.String mFtpDirUploadPath -> b
+    int mResult -> c
+    android.os.Handler handlerFtp -> d
+    void <init>(android.content.Context) -> <init>
+    com.byc.ct.ftp getFtp(android.content.Context) -> a
+    void DownloadStart(java.lang.String,java.lang.String) -> a
+    void makeDir(java.lang.String) -> a
+    void deletefile(java.lang.String) -> b
+    java.lang.String access$0(com.byc.ct.ftp) -> a
+    void access$1(com.byc.ct.ftp,java.lang.String) -> a
+    android.content.Context access$2(com.byc.ct.ftp) -> b
+    java.lang.String access$3(com.byc.ct.ftp) -> c
+    int access$4(com.byc.ct.ftp) -> d
+    java.lang.String access$5(com.byc.ct.ftp) -> e
+    java.lang.String access$6(com.byc.ct.ftp) -> f
+com.byc.ct.ftp$1 -> com.byc.ct.c:
+    com.byc.ct.ftp this$0 -> a
+    void <init>(com.byc.ct.ftp) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+com.byc.ct.ftp$ftpThread -> com.byc.ct.d:
+    it.sauronsoftware.ftp4j.FTPClient ftpClient -> b
+    java.lang.String mLocalFileName -> c
+    java.lang.String mRemoteFileName -> d
+    boolean bDownload -> e
+    com.byc.ct.ftp this$0 -> a
+    void <init>(com.byc.ct.ftp,java.lang.String,boolean,java.lang.String) -> <init>
+    void sendMSG(int) -> a
+    void run() -> run
+it.sauronsoftware.ftp4j.FTPAbortedException -> a.a.a.a:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.FTPClient -> a.a.a.b:
+    java.text.DateFormat MDTM_DATE_FORMAT -> a
+    java.util.regex.Pattern PASV_PATTERN -> b
+    java.util.regex.Pattern PWD_PATTERN -> c
+    it.sauronsoftware.ftp4j.FTPConnector connector -> d
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> e
+    java.util.ArrayList communicationListeners -> f
+    java.util.ArrayList listParsers -> g
+    it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer textualExtensionRecognizer -> h
+    it.sauronsoftware.ftp4j.FTPListParser parser -> i
+    java.lang.String host -> j
+    int port -> k
+    int security -> l
+    java.lang.String username -> m
+    java.lang.String password -> n
+    boolean connected -> o
+    boolean authenticated -> p
+    boolean passive -> q
+    int type -> r
+    int mlsdPolicy -> s
+    long autoNoopTimeout -> t
+    it.sauronsoftware.ftp4j.FTPClient$AutoNoopTimer autoNoopTimer -> u
+    long nextAutoNoopTime -> v
+    boolean restSupported -> w
+    java.lang.String charset -> x
+    boolean compressionEnabled -> y
+    boolean utf8Supported -> z
+    boolean mlsdSupported -> A
+    boolean modezSupported -> B
+    boolean modezEnabled -> C
+    boolean dataChannelEncrypted -> D
+    boolean ongoingDataTransfer -> E
+    java.io.InputStream dataTransferInputStream -> F
+    java.io.OutputStream dataTransferOutputStream -> G
+    boolean aborted -> H
+    boolean consumeAborCommandReply -> I
+    java.lang.Object lock -> J
+    java.lang.Object abortLock -> K
+    it.sauronsoftware.ftp4j.FTPCommunicationChannel communication -> L
+    void <init>() -> <init>
+    java.net.Socket ssl(java.net.Socket,java.lang.String,int) -> a
+    void setType(int) -> a
+    it.sauronsoftware.ftp4j.FTPCommunicationListener[] getCommunicationListeners() -> a
+    void addListParser(it.sauronsoftware.ftp4j.FTPListParser) -> a
+    it.sauronsoftware.ftp4j.FTPListParser[] getListParsers() -> b
+    java.lang.String[] connect(java.lang.String,int) -> a
+    void disconnect(boolean) -> a
+    void login(java.lang.String,java.lang.String) -> a
+    void login(java.lang.String,java.lang.String,java.lang.String) -> a
+    void postLoginOperations() -> d
+    void noop() -> c
+    void upload(java.io.File) -> a
+    void upload(java.io.File,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void upload(java.lang.String,java.io.InputStream,long,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void download(java.lang.String,java.io.File) -> a
+    void download(java.lang.String,java.io.File,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void download(java.lang.String,java.io.OutputStream,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    int detectType(java.lang.String) -> a
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openDataTransferChannel() -> e
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openActiveDataTransferChannel() -> f
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openPassiveDataTransferChannel() -> g
+    java.lang.String pickCharset() -> h
+    int[] pickLocalAddress() -> i
+    int[] pickForcedLocalAddress() -> j
+    int[] pickAutoDetectedLocalAddress() -> k
+    java.lang.String toString() -> toString
+    void startAutoNoopTimer() -> l
+    void stopAutoNoopTimer() -> m
+    void touchAutoNoopTimer() -> n
+    boolean access$000(it.sauronsoftware.ftp4j.FTPClient) -> a
+    java.net.Socket access$100(it.sauronsoftware.ftp4j.FTPClient,java.net.Socket,java.lang.String,int) -> a
+    it.sauronsoftware.ftp4j.FTPConnector access$200(it.sauronsoftware.ftp4j.FTPClient) -> b
+    java.lang.String access$300(it.sauronsoftware.ftp4j.FTPClient) -> c
+    java.lang.Object access$500(it.sauronsoftware.ftp4j.FTPClient) -> d
+    long access$600(it.sauronsoftware.ftp4j.FTPClient) -> e
+    long access$700(it.sauronsoftware.ftp4j.FTPClient) -> f
+    long access$602(it.sauronsoftware.ftp4j.FTPClient,long) -> a
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.FTPClient$1 -> a.a.a.c:
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> a
+    void <init>(it.sauronsoftware.ftp4j.FTPClient) -> <init>
+    java.net.Socket openDataTransferConnection() -> a
+it.sauronsoftware.ftp4j.FTPClient$2 -> a.a.a.d:
+    java.lang.String val$pasvHost -> a
+    int val$pasvPort -> b
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> c
+    void <init>(it.sauronsoftware.ftp4j.FTPClient,java.lang.String,int) -> <init>
+    java.net.Socket openDataTransferConnection() -> a
+    void dispose() -> b
+it.sauronsoftware.ftp4j.FTPClient$AutoNoopTimer -> a.a.a.e:
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> a
+    void <init>(it.sauronsoftware.ftp4j.FTPClient) -> <init>
+    void run() -> run
+    void <init>(it.sauronsoftware.ftp4j.FTPClient,it.sauronsoftware.ftp4j.FTPClient$1) -> <init>
+it.sauronsoftware.ftp4j.FTPCommunicationChannel -> a.a.a.f:
+    java.util.ArrayList communicationListeners -> a
+    java.net.Socket connection -> b
+    java.lang.String charsetName -> c
+    it.sauronsoftware.ftp4j.NVTASCIIReader reader -> d
+    it.sauronsoftware.ftp4j.NVTASCIIWriter writer -> e
+    void <init>(java.net.Socket,java.lang.String) -> <init>
+    void addCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener) -> a
+    void close() -> a
+    java.lang.String read() -> c
+    void sendFTPCommand(java.lang.String) -> a
+    it.sauronsoftware.ftp4j.FTPReply readFTPReply() -> b
+    void changeCharset(java.lang.String) -> b
+    void ssl(javax.net.ssl.SSLSocketFactory) -> a
+it.sauronsoftware.ftp4j.FTPCommunicationListener -> a.a.a.g:
+    void sent(java.lang.String) -> a
+    void received(java.lang.String) -> b
+it.sauronsoftware.ftp4j.FTPConnector -> a.a.a.h:
+    int connectionTimeout -> a
+    int readTimeout -> b
+    int closeTimeout -> c
+    boolean useSuggestedAddressForDataConnections -> d
+    java.net.Socket connectingCommunicationChannelSocket -> e
+    void <init>(boolean) -> <init>
+    void <init>() -> <init>
+    boolean getUseSuggestedAddressForDataConnections() -> a
+    java.net.Socket tcpConnectForCommunicationChannel(java.lang.String,int) -> a
+    java.net.Socket tcpConnectForDataTransferChannel(java.lang.String,int) -> b
+    java.net.Socket connectForCommunicationChannel(java.lang.String,int) -> c
+    java.net.Socket connectForDataTransferChannel(java.lang.String,int) -> d
+it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider -> a.a.a.i:
+    java.net.Socket openDataTransferConnection() -> a
+    void dispose() -> b
+it.sauronsoftware.ftp4j.FTPDataTransferException -> a.a.a.j:
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.Throwable) -> <init>
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.Throwable) -> <init>
+it.sauronsoftware.ftp4j.FTPDataTransferListener -> a.a.a.k:
+    void started() -> a
+    void transferred(int) -> a
+    void completed() -> b
+    void aborted() -> c
+    void failed() -> d
+it.sauronsoftware.ftp4j.FTPDataTransferServer -> a.a.a.l:
+    java.net.ServerSocket serverSocket -> a
+    java.net.Socket socket -> b
+    java.io.IOException exception -> c
+    java.lang.Thread thread -> d
+    void <init>() -> <init>
+    int getPort() -> c
+    void run() -> run
+    void dispose() -> b
+    java.net.Socket openDataTransferConnection() -> a
+it.sauronsoftware.ftp4j.FTPException -> a.a.a.m:
+    int code -> a
+    java.lang.String message -> b
+    void <init>(int) -> <init>
+    void <init>(int,java.lang.String) -> <init>
+    void <init>(it.sauronsoftware.ftp4j.FTPReply) -> <init>
+    java.lang.String getMessage() -> getMessage
+    java.lang.String toString() -> toString
+it.sauronsoftware.ftp4j.FTPIllegalReplyException -> a.a.a.n:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.FTPListParser -> a.a.a.o:
+it.sauronsoftware.ftp4j.FTPReply -> a.a.a.p:
+    int code -> a
+    java.lang.String[] messages -> b
+    void <init>(int,java.lang.String[]) -> <init>
+    int getCode() -> a
+    boolean isSuccessCode() -> b
+    java.lang.String[] getMessages() -> c
+    java.lang.String toString() -> toString
+it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer -> a.a.a.q:
+    boolean isTextualExt(java.lang.String) -> a
+it.sauronsoftware.ftp4j.NVTASCIIReader -> a.a.a.r:
+    java.lang.String SYSTEM_LINE_SEPARATOR -> a
+    java.io.InputStream stream -> b
+    java.io.Reader reader -> c
+    void <init>(java.io.InputStream,java.lang.String) -> <init>
+    void close() -> close
+    int read(char[],int,int) -> read
+    void changeCharset(java.lang.String) -> a
+    java.lang.String readLine() -> a
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.NVTASCIIWriter -> a.a.a.s:
+    java.io.OutputStream stream -> a
+    java.io.Writer writer -> b
+    void <init>(java.io.OutputStream,java.lang.String) -> <init>
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void changeCharset(java.lang.String) -> a
+    void writeLine(java.lang.String) -> b
+it.sauronsoftware.ftp4j.connectors.DirectConnector -> a.a.a.a.a:
+    void <init>() -> <init>
+    java.net.Socket connectForCommunicationChannel(java.lang.String,int) -> c
+    java.net.Socket connectForDataTransferChannel(java.lang.String,int) -> d
+it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer -> a.a.a.b.a:
+    java.lang.Object lock -> a
+    it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer instance -> b
+    it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer getInstance() -> a
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.extrecognizers.ParametricTextualExtensionRecognizer -> a.a.a.b.b:
+    java.util.ArrayList exts -> a
+    void <init>() -> <init>
+    void addExtension(java.lang.String) -> b
+    boolean isTextualExt(java.lang.String) -> a
+it.sauronsoftware.ftp4j.listparsers.DOSListParser -> a.a.a.c.a:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.EPLFListParser -> a.a.a.c.b:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.listparsers.MLSDListParser -> a.a.a.c.c:
+    java.text.DateFormat MLSD_DATE_FORMAT_1 -> a
+    java.text.DateFormat MLSD_DATE_FORMAT_2 -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.NetWareListParser -> a.a.a.c.d:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.UnixListParser -> a.a.a.c.e:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>

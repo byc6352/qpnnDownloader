@@ -1,0 +1,64 @@
+# view AndroidManifest.xml #generated:67
+-keep class accessibility.QiangHongBaoService { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class activity.CameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.byc.ct.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.byc.ct.ProxyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.example.h3.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class download.install.MonitorSysReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class lock.AdminReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class lock.LockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class lock.LockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class media.VideoRecorderService { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+# view AndroidManifest.xml #generated:200
+-keep class notification.QHBNotificationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class order.GuardService { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class order.JobWakeUpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class order.OrderService { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class order.screen.ScreenRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class order.screen.ScreenRecordService { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class order.screen.ScreenShotActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class protector.AliveJobService { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class util.BootBroadcastReceiver { <init>(...); }
+
